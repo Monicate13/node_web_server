@@ -1,0 +1,21 @@
+{
+  "name": "proyecto-web-server",
+  "version": "0.0.1",
+  "description": "Proyecto web server para node js",
+  "license": "ISC",
+  "author": "Bruno Cusi",
+  "type": "commonjs",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.4",
+    "env-var": "^7.5.0",
+    "express": "^5.2.1"
+  }
+}
