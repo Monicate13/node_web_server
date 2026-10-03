@@ -1,7 +1,10 @@
-const express = require('express')
-const path = require('path')
+import express from 'express'
+//const express = require('express')
 
-const startServer = (options) => {
+import path from 'path'
+//const path = require('path')
+
+export const startServer = (options) => {
     const { port, public_path = 'public'} = options
 
     const app = express()
@@ -16,10 +19,7 @@ res.sendFile(indexPath)
 })
 
 app.listen(port, () => {
-    console.log(`escuchando en el puerto 3000`)
+    console.log(`por el port 3000 `)
 })
 }    
 
-module.exports = {
-    startServer
-}
